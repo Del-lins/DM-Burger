@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+   />
+   <link rel="preconnect" href="https://fonts.googleapis.com" />
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+   <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+   />
+   <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+   />
+   <meta property="og:type" content="website" />
+   <meta property="og:title" content="DM Burger" />
+   <meta property="og:image"
+         content=""
+   />
+   <meta property="og:description" content="O melhor Hamburguer estar aqui!" />
+   <meta property="og:site_name" content="DM Burger" />
+   
+   <link
+      rel="shortcut icon"
+      href="./src/assets/favicon-hambúrguer.png"
+      type="image/x-icon"
+   />
+   <link rel="stylesheet" href="./css/style.css" />
+   <title>DM Burger</title>
+</head>
+<body> 
+   <header>
+      
+      <div class="home">
+         <img src="./src/assets/hamb-1.png" alt="Logo burger" class="logo">
+         <h1 class="nome-logo">DM Burger</h1>
+         <span class="endereco-home">Rua DL 25, Maracanã - CE</span>
+         <div class="horario-home" id="date-span">
+            <span>Seg á Dom - 18:00 as 22:00</span>
+         </div>
+      </div>
+   </header>
+
+   <h2 class="nosso-menu">Conheça nosso menu</h2>
+
+   <div id="menu">
+      <main class="main">
+         <div class="flex-paddin">
+            <img src="./src/assets/hamb-1.png" alt="Hamburger Smash" class="hamburgueres"
+            />
+
+            <div>
+               <p class="nome">Hamburger Smash</p>
+               <p class="descricao">
+                  Pão levinho de fermentação natural, burger 160g, queijo prato e maionese
+                  da casa.
+               </p>
+
+               <div class="espaco">
+                  <p class="preco">R$ 19,99</p>
+                  <button class="add-to-cart-btn"
+                  data-name="Hamburger Smash"
+                  data-price="19.99"
+                  >
+                  <i class="fa fa-cart-plus" id="carrin"></i>   
+                  </button>
+               </div>
+            </div>
+         </div>
+
+         <div class="flex-paddin">
+            <img src="./src/assets/hamb-2.png" alt="Hamburguer Duplo" class="hamburgueres"
+            >
+            <div>
+               <p class="nome">Hamburger Duplo</p>
+               <p class="descricao">
+                  Pão levinho de fermentação natural da Trigou, burger 160g, quijo prato e maionese
+                  da casa.
+               </p>
+
+               <div class="espaco">
+                  <p class="preco">R$ 37,99</p>
+                  <button class="add-to-cart-btn"
+                  data-name="Hamburger Duplo"
+                  data-price="37.99"
+                  >
+                  <i class="fa fa-cart-plus" id="carrin"></i>
+               </button>
+               </div>
+            </div>
+         </div>
+
+         <div class="flex-paddin">
+            <img src="./src/assets/hamb-3.png" alt="Hamburguer Chadder" class="hamburgueres"
+            >
+            <div>
+               <p class="nome">Hamburguer Chadder</p>
+               <p class="descricao">
+                  Pão levinho de fermentação natural da Trigou, burger 160g, quijo prato e maionese
+                  da casa.
+               </p>
+
+               <div class="espaco">
+                  <p class="preco">R$ 33,99</p>
+                  <button class="add-to-cart-btn"
+                  data-name="Hamburguer Chadder"
+                  data-price="33.99"
+                  >
+                  <i class="fa fa-cart-plus" id="carrin"></i>
+               </button>
+               </div>
+            </div>
+         </div>
+
+         <div class="flex-paddin">
+            <img src="./src/assets/hamb-4.png" alt="Hamburguer da Casa" class="hamburgueres"
+            >
+            <div>
+               <p class="nome">Hamburguer da Casa</p>
+               <p class="descricao">
+                  Pão levinho de fermentação natural da Trigou, burger 160g, quijo prato e maionese
+                  da casa.
+               </p>
+
+               <div class="espaco">
+                  <p class="preco">R$ 25,99</p>
+                  <button class="add-to-cart-btn"
+                  data-name="Hamburguer da Casa"
+                  data-price="25.99"
+                  >
+                  <i class="fa fa-cart-plus" id="carrin"></i>
+               </button>
+               </div>
+            </div>
+         </div>
+
+         <div class="flex-paddin">
+            <img src="./src/assets/hamb-5.png" alt="Hamburguer Completo" class="hamburgueres"
+            >
+            <div>
+               <p class="nome">Hamburguer Completo</p>
+               <p class="descricao">
+                  Pão levinho de fermentação natural da Trigou, burger 160g, quijo prato e maionese
+                  da casa.
+               </p>
+
+               <div class="espaco">
+                  <p class="preco">R$ 39,99</p>
+                  <button class="add-to-cart-btn"
+                  data-name="Hamburguer Completo"
+                  data-price="39.99"
+                  >
+                  <i class="fa fa-cart-plus" id="carrin"></i>
+               </button>
+               </div>
+            </div>
+         </div>
+
+         <div class="flex-paddin">
+            <img src="./src/assets/hamb-6.png" alt="Hamburguer com Batatas" class="hamburgueres"
+            >
+            <div>
+               <p class="nome">Hamburguer com Batatas</p>
+               <p class="descricao">
+                  Pão levinho de fermentação natural da Trigou, burger 160g, quijo prato e maionese
+                  da casa.
+               </p>
+
+               <div class="espaco">
+                  <p class="preco">R$ 33,99</p>
+                  <button class="add-to-cart-btn"
+                  data-name="Hamburguer com Batatas"
+                  data-price="33.99"
+                  >
+                  <i class="fa fa-cart-plus" id="carrin"></i>
+               </button>
+               </div>
+            </div>
+         </div>
+
+         <div class="flex-paddin">
+            <img src="./src/assets/hamb-7.png" alt="Hamburguer Tickets" class="hamburgueres"
+            >
+            <div>
+               <p class="nome">Hamburguer Tickets</p>
+               <p class="descricao">
+                  Pão levinho de fermentação natural da Trigou, burger 160g, quijo prato e maionese
+                  da casa.
+               </p>
+
+               <div class="espaco">
+                  <p class="preco">R$ 23,99</p>
+                  <button class="add-to-cart-btn"
+                  data-name="Hamburguer Tickets"
+                  data-price="23.99"
+                  >
+                  <i class="fa fa-cart-plus" id="carrin"></i>
+               </button>
+               </div>
+            </div>
+         </div>
+
+         <div class="flex-paddin">
+            <img src="./src/assets/hamb-8.png" alt="Hamburguer Salad" class="hamburgueres"
+            >
+            <div>
+               <p class="nome">Hamburguer Salad</p>
+               <p class="descricao">
+                  Pão levinho de fermentação natural da Trigou, burger 160g, quijo prato e maionese
+                  da casa.
+               </p>
+
+               <div class="espaco">
+                  <p class="preco">R$ 18,99</p>
+                  <button class="add-to-cart-btn"
+                  data-name="Hamburguer Salad"
+                  data-price="18.99"
+                  >
+                  <i class="fa fa-cart-plus" id="carrin"></i>
+               </button>
+               </div>
+            </div>
+         </div>
+      </main>
+
+      <div class="espaco-2">
+         <h2 class="font">Bebidas</h2>
+      </div>
+
+      <div class="main" id="menu">
+
+         <div class="refri">
+            <img src="./src/assets/refri-1.png" alt="Coca lata" class="latinha"
+            >
+            <div class="full">
+               <p class="lataa">Coca Lata</p>
+               <div class="espaco">
+                  <p class="preco">R$ 4,99</p>
+                  <button class="add-to-cart-btn"
+                  data-name="Coca Lata"
+                  data-price="4.99"
+                  >
+                  <i class="fa fa-cart-plus" id="carrin"></i>
+                  </button>
+               </div>
+            </div>
+         </div>
+
+         <div class="refri">
+            <img src="./src/assets/refri-2.png" alt="Guaraná Lata" class="latinha"
+            >
+            <div class="full">
+               <p class="lataa">Guaraná Lata</p>
+               <div class="espaco">
+                  <p class="preco">R$ 3,99</p>
+                  <button class="add-to-cart-btn"
+                     data-name="Guaraná Lata"
+                     data-price="3.99"
+                  >
+                  <i class="fa fa-cart-plus" id="carrin"></i>
+               </button>
+               </div>
+            </div>
+         </div>
+      </div>
+
+   <div class="cart" id="cart-modal">
+      <div class="layout">
+         <h2 class="meu-carrinho">Meu carrinho</h2>
+         <div id="cart-items"></div>
+         <p id="cart-total">Total: <span>0.00</span></p>
+         <p class="entrega">Endereço de Entrega</p>
+         <input type="text" placeholder="Digite seu endereço..."
+            id="address"
+            class="input"
+         >
+         <p id="address-warn">Digite seu endereço completo!</p>
+
+         <div class="espaco-4">
+            <button id="close-modal-btn">Fechar</button>
+            <button id="checkout-btn">Finalizar Pedido</button>
+         </div>
+      </div>
+   </div>
+
+   <footer>
+      <button id="cart-btn">
+         (<span id="cart-count">0</span>)
+            Veja meu carrinho
+         <i class="fa fa-cart-plus" id="carrin-footer"></i>   
+      </button>
+   </footer>
+
+   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+   <script src="./js/scrip.js"></script>
+</body>
+</html>
